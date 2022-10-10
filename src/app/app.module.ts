@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddDonorComponent } from './add-donor/add-donor.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SearchdonorComponent } from './searchdonor/searchdonor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddDonorComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchdonorComponent
   ],
   imports: [
     BrowserModule,
