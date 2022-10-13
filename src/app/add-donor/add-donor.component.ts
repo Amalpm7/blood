@@ -8,6 +8,33 @@ import { Component, OnInit } from '@angular/core';
 export class AddDonorComponent implements OnInit {
 
   constructor() { }
+  name=""
+  bloodGroup=""
+  dob=""
+  lastDonation=""
+  prevDiseases=""
+  lastVaccination=""
+  address=""
+  pinNo=""
+  mobileNo=""
+  readToDonate=""
+  readValues=()=>{
+    let data={
+      "name":this.name,
+  "bloodGroup":this.bloodGroup,
+  "dob":this.dob,
+  "lastDonation":this.lastDonation,
+  "prevDiseases":this.prevDiseases,
+  "lastVaccination":this.lastVaccination,
+  "address":this.address,
+  "pinNo":this.pinNo,
+  "mobileNo":this.mobileNo,
+  "readToDonate":this.readToDonate
+    }
+    console.log(data)
+  }
+
+
 
   ngOnInit(): void {
   }

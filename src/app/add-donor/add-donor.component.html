@@ -4,11 +4,11 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                    <label for="" class="form-label">Donor Name</label>
-                   <input placeholder="Donor name" type="text" class="form-control"> 
+                   <input placeholder="Donor name" type="text" class="form-control " name="name" [(ngModel)]="name"> 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Blood group</label>
-                    <select name="" id="" class="form-control">
+                    <select name="" id="" class="form-control" name="bloodGroup" [(ngModel)]="bloodGroup">
                         <option value="A+ve">A+ve</option>
                         <option value="A-ve">A-ve</option>
                         <option value="B+ve">B+ve</option>
@@ -19,38 +19,38 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">D.O.B</label>
-                    <input placeholder="D.O.B" type="date" class="form-control">
+                    <input placeholder="D.O.B" type="date" class="form-control" name="dob" [(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Last Donation Date</label>
-                    <input placeholder="Last Donation Date" type="date" class="form-control">
+                    <input placeholder="Last Donation Date" type="date" class="form-control " name="lastDonation"[(ngModel)]="lastDonation">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Any previous diseases</label>
-                    <input placeholder="Any previous diseases" type="text" class="form-control">
+                    <input placeholder="Any previous diseases" type="text" class="form-control" name="prevDiseases"[(ngModel)]="prevDiseases">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Last vaccination date</label>
-                    <input placeholder="Last vaccination date" type="text" class="form-control">
+                    <input placeholder="Last vaccination date" type="text" class="form-control" name="lastVaccination" [(ngModel)]="lastVaccination">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-3">
                     <label for="" class="form-label">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control"name="address" [(ngModel)]="address"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Pin No</label>
-                    <input placeholder="Pin No" type="text" class="form-control">
+                    <input placeholder="Pin No" type="text" class="form-control" name="pinNo" [(ngModel)]="pinNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Mobile No</label>
-                    <input placeholder="Mobile no" type="text" class="form-control">
+                    <input placeholder="Mobile no" type="text" class="form-control" name="mobileNo" [(ngModel)]="mobileNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Ready to donate</label>
-                    <input placeholder="Ready to donate" type="text" class="form-control">
+                    <input placeholder="Ready to donate" type="text" class="form-control" name="readToDonate" [(ngModel)]="readToDonate">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
-                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-success"(click)="readValues()">Submit</button>
                 </div>
             </div>
         </div>
