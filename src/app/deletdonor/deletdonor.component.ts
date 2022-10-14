@@ -8,6 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class DeletdonorComponent implements OnInit {
 
   constructor() { }
+  donorId=""
+  readValue=()=>{
+    let data={
+      "donorId":this.donorId
+
+    }
+    console.log(data)
+  }
 
   ngOnInit(): void {
   }
